@@ -1,0 +1,88 @@
+{
+    "animaux": [
+      {
+        "nom": "Luna",
+        "type": "chien",
+        "age": 3,
+        "description": "Luna est une labrador amicale et énergique.",
+        "localisation": "Montréal"
+      },
+      {
+        "nom": "Felix",
+        "type": "chat",
+        "age": 5,
+        "description": "Felix est un chat tigré calme et affectueux.",
+        "localisation": "Laval"
+      },
+      {
+        "nom": "Donatello",
+        "type": "tortue",
+        "age": 10,
+        "description": "Donatello est une tortue aquatique curieuse.",
+        "localisation": "Pointe aux trembles"
+      },
+      {
+        "nom": "Bugs",
+        "type": "lapin",
+        "age": 2,
+        "description": "Bugs est un lapin nain très joueur.",
+        "localisation": "Montréal"
+      },
+      {
+        "nom": "Rocky",
+        "type": "chien",
+        "age": 7,
+        "description": "Rocky est un berger allemand loyal et protecteur.",
+        "localisation": "Laval"
+      },
+      {
+        "nom": "Whiskers",
+        "type": "chat",
+        "age": 4,
+        "description": "Whiskers est un chat persan doux et câlin.",
+        "localisation": "Montréal"
+      },
+      {
+        "nom": "Sheldon",
+        "type": "tortue",
+        "age": 15,
+        "description": "Sheldon est une tortue terrestre paisible.",
+        "localisation": "Pointe aux trembles"
+      },
+      {
+        "nom": "Thumper",
+        "type": "lapin",
+        "age": 1,
+        "description": "Thumper est un jeune lapin plein d'énergie.",
+        "localisation": "Laval"
+      },
+      {
+        "nom": "Max",
+        "type": "chien",
+        "age": 6,
+        "description": "Max est un golden retriever gentil et patient.",
+        "localisation": "Montréal"
+      },
+      {
+        "nom": "Milo",
+        "type": "chat",
+        "age": 3,
+        "description": "Milo est un chat siamois très vocal et joueur.",
+        "localisation": "Pointe aux trembles"
+      },
+      {
+        "nom": "Crush",
+        "type": "tortue",
+        "age": 20,
+        "description": "Crush est une grande tortue marine calme.",
+        "localisation": "Laval"
+      },
+      {
+        "nom": "Flopsy",
+        "type": "lapin",
+        "age": 3,
+        "description": "Flopsy est un lapin bélier doux et câlin.",
+        "localisation": "Montréal"
+      }
+    ]
+  }

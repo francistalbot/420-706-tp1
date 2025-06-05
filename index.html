@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refuge pour Animaux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Refuge pour Animaux</h1>
+        <nav>
+            <button id="toggle-view">Changer de vue</button>
+            <input type="range" id="grid-size" min="150" max="300" value="200">
+            <label for="grid-size">Taille des cartes</label>
+        </nav>
+        <div>
+            <button id="filter-chien" class="filter-button active" onclick="toggleAnimal('chien')">Chiens</button>
+            <button id="filter-chat" class="filter-button active" onclick="toggleAnimal('chat')">Chats</button>
+            <button id="filter-tortue" class="filter-button active" onclick="toggleAnimal('tortue')">Tortues</button>
+            <button id="filter-lapin" class="filter-button active" onclick="toggleAnimal('lapin')">Lapins</button>
+        </div>
+    </header>
+
+    <main id="animal-container" class="animal-container list-view"></main>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-details">
+            <span class="fermer-modal" onclick="fermerModal()">×</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
