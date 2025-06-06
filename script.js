@@ -32,9 +32,13 @@ function renderAnimals() {
 }
 
 function toggleAnimal(type) {
-  // document.querySelectorAll(`...`)
-
-  console.log(`Filtre changé pour ${type}`);
+  const filterButton = document.getElementById(`filter-${type}`);
+  filterButton.classList.toggle("active");
+  const isActive = filterButton.classList.contains("active");
+  console.log(`Filtre ${type} ${isActive ? "activé" : "désactivé"}`);
+  document.querySelectorAll(`.${type}`).forEach((animalCard) => {
+      animalCard.classList.toggle("hidden", !isActive);
+  });
 }
 
 function afficherModal(animal) {
