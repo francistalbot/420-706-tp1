@@ -52,8 +52,13 @@ function fermerModal() {
 }
 
 // Toggle entre vue liste et grille
-document.getElementById('toggle-view').addEventListener('click', function() {
-    console.log(`Changement de style d'affichage !`)
+document.getElementById("toggle-view").addEventListener("click", function () {
+  console.log(`Changement de style d'affichage !`);
+  const animalContainer = document.getElementById("animal-container");
+  isListView = !isListView;
+  animalContainer.classList.toggle("list-view", isListView);
+  animalContainer.classList.toggle("grid-view", !isListView);
+  this.textContent = isListView ? "Vue en grille" : "Vue en liste";
 });
 
 // Contrôle de la taille des cartes en mode grille
