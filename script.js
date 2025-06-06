@@ -61,6 +61,12 @@ function fermerModal() {
   document.getElementById("modal").classList.add("hidden");
 }
 
+document.getElementById("modal").addEventListener("click", function(event) {
+  if (event.target === this) {
+    fermerModal();
+  }
+});
+
 // Toggle entre vue liste et grille
 document.getElementById("toggle-view").addEventListener("click", function () {
   console.log(`Changement de style d'affichage !`);
