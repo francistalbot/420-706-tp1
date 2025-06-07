@@ -108,14 +108,16 @@ header {
 
 .grid-view {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
   gap: var(--spacing-small)  ;
   padding: 0 var(--spacing-medium);
 }
   .grid-view .carte-animal {
     box-sizing: border-box;
+    
+    max-width: 400px;
     padding: var(--spacing-medium) var(--spacing-medium) var(--spacing-large) ;
-    margin: var(--spacing-small)  ;
+    margin: var(--spacing-small) auto ;
 }
     .grid-view .carte-animal img{
       box-sizing: border-box;
@@ -174,7 +176,6 @@ nav button, nav input, nav label {
 /* Media Queries pour la responsivité */
 @media screen and (max-width: 768px) {
   .list-view .carte-animal {
-    background-color: blue;
     width: 45%;
   }
 }

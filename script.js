@@ -37,7 +37,7 @@ function toggleAnimal(type) {
   const isActive = filterButton.classList.contains("active");
   console.log(`Filtre ${type} ${isActive ? "activé" : "désactivé"}`);
   document.querySelectorAll(`.${type}`).forEach((animalCard) => {
-      animalCard.classList.toggle("hidden", !isActive);
+    animalCard.classList.toggle("hidden", !isActive);
   });
 }
 
@@ -61,7 +61,7 @@ function fermerModal() {
   document.getElementById("modal").classList.add("hidden");
 }
 
-document.getElementById("modal").addEventListener("click", function(event) {
+document.getElementById("modal").addEventListener("click", function (event) {
   if (event.target === this) {
     fermerModal();
   }
@@ -85,7 +85,7 @@ document.getElementById("grid-size").addEventListener("input", function () {
   if (animalContainer.classList.contains("grid-view")) {
     animalContainer.style.setProperty(
       "grid-template-columns",
-      `repeat(auto-fill, minmax(${sliderValue * 1.7}px, 1fr))`
+      `repeat(auto-fill, minmax(min(${sliderValue}px, 100%), 1fr))`
     );
   }
 });
