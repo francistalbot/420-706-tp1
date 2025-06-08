@@ -19,7 +19,7 @@ function renderAnimals() {
             }" onclick='afficherModal(${JSON.stringify(
         animal
       )})' data-location="${animal.localisation}">
-                <img src="assets/${animal.type}.jpg" alt="${animal.nom}">
+                <img src="assets/${animal.nom}.jpg" alt="${animal.nom}">
                 <div class="carte-animal-info">
                 <h2>${animal.nom}</h2>
                 <p>Age: ${animal.age} ans</p>
@@ -47,7 +47,7 @@ function afficherModal(animal) {
   details.innerHTML = `
     <div class='animal-modal'>
         <h2>${animal.nom}</h2>
-        <img src="assets/${animal.type}.jpg" alt="${animal.nom}">
+        <img src="assets/${animal.nom}.jpg" alt="${animal.nom}">
         <p>Type: ${animal.type}</p>
         <p>Age: ${animal.age} ans</p>
         <p>Localisation: ${animal.localisation}</p>
